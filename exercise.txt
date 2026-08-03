@@ -1,0 +1,8 @@
+1) create a python program to accept and display below detail
+    name, age, gender, birth date, city, pincode
+
+2) create a python program to accept user's age as input and calculate how many year he will leave assuming maximum age is 100 year. 
+    example:-
+    -----------------------------
+    age : 25 
+    remaining_age = 100 - 25
