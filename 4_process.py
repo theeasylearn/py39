@@ -1,22 +1,21 @@
-#accept 2 number from user and will do addition, subtraction, multiplication and division and display 
-num1 = input("Enter first number")
-num2 = input("Enter second number")
+# write a program to accept 5 subject marks from user. calculate total marks & average and display it 
+# science, maths, social, computer, history
+science = input("Enter science marks") #50
+maths = input("Enter maths marks")
+social = input("Enter social marks")
+computer = input("Enter computer marks")
+history = input("Enter history marks")
 
-#convert input into integer 
-num1 = int(num1)
-num2 = int(num2)
+#convert marks into integer
+science = int(science) #now science has integer value
+maths = int(maths)
+social = int(social)
+computer = int(computer)
+history = int(history)
 
-#addition of num1 and num2 
-addition = num1 + num2 
-print("addition = ",addition)
+#process 
+total = science + maths + social + computer + history
+average = total / 5 
 
-#subtraction of num1 and num2 
-subtraction = num1 - num2 
-print("subtraction = ",subtraction)
-
-mul = num1 * num2 
-print("multiplication = ",mul)
-
-division = num1 / num2 
-print("Division = ",division)
-
+print("total = ",total)
+print(f"average = {average}")

@@ -6,3 +6,11 @@
     -----------------------------
     age : 25 
     remaining_age = 100 - 25
+    
+3) write a program to calculate batter strike rate from user given runs and balls  
+
+4) write a program to calculate area of room from user given length and width 
+
+5) write a program to calculate total amount from user given amount and gst rate 
+input : amount 100 rate 18 total amount = 118
+input : amount 1000 rate 5 total amount = 1050

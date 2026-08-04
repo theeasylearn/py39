@@ -1,13 +1,11 @@
-#input function example 
-#accept name, age, weight from user 
+# how to accept input from user 
+#input 
+#variable-name = input("message")
+name = input("What is your name?")
+print(name)
 
-name = input("Enter your name")
-print("your name is ",name)
+age = input("What is your age?")
+print("your age is",age)
 
-#accept age 
-age = input("Enter your age")
-print("your age is ",age)
-
-#accept weight 
-weight = input("Enter your weight")
-print("your weight is ",weight)
+weight = input("What is your weight?")
+print(f"your weight is {weight}")
