@@ -14,3 +14,266 @@
 5) write a program to calculate total amount from user given amount and gst rate 
 input : amount 100 rate 18 total amount = 18
 input : amount 1000 rate 5 total amount = 1050
+
+----------------------------------------------------------------------
+List
+----------------------------------------------------------------------
+create a list to store your favorite destination in india
+create a list & store 10 different type of values in it 
+    print all values 
+    print 1st value 
+    print 1st five value 
+    print last 5 value 
+    print list twice using * 
+    print item in the list from 2nd to 5th position
+    print count of items in list 
+
+Dictionary
+---------------------------
+    Create Dictionary store 10 different types of detail about you. 
+    add dob into it.
+    display Dictionary
+    remove dob from Dictionary 
+    get only keys 
+    get only values 
+    update age key 
+    update city key using update method 
+    copy Dictionary into another Dictionary using shallow copy technique
+    empty copied Dictionary 
+    display empty Dictionary 
+    
+write a program to convert 3 digit amount into words
+input :123 output one two three
+amount = 123
+
+
+write a program to convert 3 digit amount into words
+input :123 output one hundred twenty three
+
+write a program to convert 4 digit amount into words
+input :1234 output one two three four 
+
+#write a program to convert given minutes into hours and remaining minutes
+input : 150 minutes 
+output : 2 hours and 30 minutes 
+
+#write a program to convert given grams into kg and remaining grams
+input : 2500 grams
+output : 2 kg and 500 grams 
+
+#write a program to display dinomations of currency for given amount
+input : 387 Rupees 
+output : 
+200 x 1 = 200
+100 x 1 = 100
+50 x 1 =  50
+20 x 1 =  20
+10 x 1 =  10
+5 x 1 =   05
+2 x 1 =   02
+1 x 1 =   01
+
+decision making statement
+---------------------
+1) write a program to findout whether given shape is landscape or portrait or square using decision making statement if 
+
+
+2) write a program to accept length and width of two different farm from user. and findout & display which farm is bigger 
+
+3) write a program to accept day of week (between 1 to 7) and then display name of day. (use simple if decision making)
+    input 1 : monday 
+    input 2 : tuesday 
+    input 7 : sunday 
+
+4) write a program to findout whether given year is millennium year or not. using if else decision making statements.
+
+5) write a program to findout elder brother from given two brother's age. 
+
+6) write a program to findout which is cheaper approach to buy IPhone 17 pro max.  consider use is going usa should he buy iphone from usa or from india. 
+
+7) write a program to decide which is cheaper approach to go from ahmedabad to delhi. by car or by train. consider person has his own petrol car  and he prefer to travel by 1st class train 
+
+
+if else if decision making 
+1) 
+Write a program that takes a 5 subject marks from user. calculate total and average  and prints the grade using the following conditions:
+
+| Percentage | Grade |
+| ---------- | ----- |
+| 90–100     | A+    |
+| 80–89      | A     |
+| 70–79      | B     |
+| 60–69      | C     |
+| 50–59      | D     |
+| below 50   | Need to improve  |
+----------------------------------------
+
+3) write a program to accept 2 number from user. and accept choice for operations.
+operations will be addition, subtraction, multiplication, division
+do operation and display result as per user choice using switch statements.
+
+2) write a program to accept month number from user and display how many days month has. (use logical operator or)
+    input : 1 output : this month has 31 days 
+    input : 4 output : this month has 30 days 
+
+3) write a program to findout whether given year is millenium year or not 
+
+4) write a program to accept birth day and birth month from user as separate input. decide zodiac sign from below table 
+    Aries: March 21–April 19
+    Taurus: April 20–May 20
+    Gemini: May 21–June 21
+    Cancer: June 22–July 22
+    Leo: July 23–August 22
+    Virgo: August 23–September 22
+    Libra: September 23–October 22
+    Scorpio: October 24–November 21
+    Sagittarius: November 22–December 21
+    Capricorn: December 22–January 19
+    Aquarius: January 20–February 18
+    Pisces: February 19–March 20
+
+5) write a program for male female marriage compatibility as per below link,  accept birth day and birth month from user as separate input. decide zodiac sign as per previous example and then use zodiac sign to decide  marriage compatibility
+
+https://miro.medium.com/v2/resize:fit:1100/format:webp/1*f58HMTVzfN2XvCPR23wXgA.jpeg
+
+6) write a program to calculate & display day of week (monday/tuesday) from given date. 
+refer https://www.wikihow.com/Calculate-the-Day-of-the-Week
+
+
+loop 
+
+while loop 
+---------------------
+1)   100  95  90  85  80  75  70  65  60  ..... 0
+2)   1    8   27   125  ....... 1000
+3)   1    -8   27  -64  .....    1000
+4)   0    1   1   2   3   5   8   13  .... 100
+
+5) write a program to make sum of all digits 
+input : 12345 process =  1+2+3+4+5 = output : fifteen 
+
+6) write a program to reverse given number 
+input: 12345 output : 54321
+
+7) write a program to check whether given number is armstrong no or not 
+8) write a program to check whether given number is perfect no or not 
+9) write a program to check whether given number is composite no or not 
+
+for loop 
+------------------------
+1) write a program to count odd and even number in numeric list 
+2) write a program to sum of all the values in tuple and also calculate average 
+3) write a program to count words in given string 
+4) write a program to count digits in given string 
+5) write a program to count vowels, consonants, digits, words, and symbol in given list 
+6) write a program to convert all negative values into positive values in the same list 
+
+functions
+-----------------------------------
+create default argument function getBytes that returns total bytes of Gigabytes, megabytes and kilobytes and bytes where megabytes and kilobytes and bytes should be optional 
+
+create default argument function getSeconds that return total seconds of hours, minutes and seconds where  minutes and seconds should be optional 
+
+create default argument function getVolume that return volume of room using , length width and deapth where all inputs should be optional, in case no argument is supplied return 0 
+
+------------------
+modify beautifulsoup\4_final_example.py make below changes 
+    1) accept users birth day and month separately only once and store it somewhere in file (use fs module) 
+    2) findout and use package that can calculate and return chandra rashi 
+    3) play rashi bhavishya as per chandra rashi calculated in step 2 
+    4) create system that will play music everyday once when user start computer 1st time  
+
+recursion
+-----------------
+write a program to convert decimal number into octal number system 
+write a program to convert decimal number into hexadecimal number system 
+write a program to convert amount into words (upto 10 digits)
+input: 10265 output: ten thousand two hundred sixty five  
+
+lambda function 
+write a program to calculate compound interest using lambda function 
+write a program to calculate fahrenheit of given celsius using lambda function 
+write a program to convert list that has mixed case countries names into lowercase countries name using lambda
+write a program to convert list that has mixed case countries names into uppercase countries name  using lambda
+
+write a program to filter word list that ends with asia using filter function 
+write a program to filter word list that ends with tan using filter function 
+write a program to filter largest number among each value in 2n list using filter function 
+
+
+modules
+-----------------------------
+create module currency.py which has below methods 
+    toDollar which convert given Rupees into Dollar 
+    toEuro  which convert given Rupees into Euro 
+    toPound which convert given Rupees into Pound 
+    ToYen which convert given Rupees into Yen
+
+create module communicator which has below methods 
+    sendsms which has mobile no message as argument 
+        decrease credit by 2
+    sendWhatmsg which has mobile no message as argument
+        decrease credit by 1.5
+    sendEmail which has mobile no message as argument
+        decrease credit by 1
+    increaseCredit(points)
+        increase credit variable using value given in points (must be positive)
+        
+    use can send sms/msg/email only when he has sufficient credit (global variable) 
+        deduct credit variable as per value given above 
+    initial credit value will be 10
+
+Exception handling 
+------------------------------------------------
+1) write a program to make sum of two list into third list. make sure both list are of same size. 
+    number1 = [10,20,30]
+    number2 = [11,12,13]
+    result = [21,32,43]
+
+2) write a program to convert negative numbers into positive numbers in list.  also skip invalid values and empty values if any 
+
+3) write a program to accept weight from user in kg. calculate BMI(body to mass index) and display it. make sure weight is > 0 using raise Exception concept 
+
+4) write a program to accept comments from user as string. ensure comment must not have any below given bad words, if there is any bad words raise custom Exception ask user to re-enter without bad words. program should continue to work until user given comments without bad words .
+    Use class keywords for custom Exception 
+    bad words = ['abc','bcd','cde','xyz','zzz']
+    
+write a program to read numbers from numbers.txt file which has positive and negative number
+    if number is positive, write it into positive.txt file 
+    if number is negative, write it into negative.txt file 
+
+write a program to read numbers from numbers.txt file. convert all numbers into positive, avoid duplicates and write into unique_numbers.txt file 
+
+date time 
+----------------
+1) write a program to findout younger person from 3 person's given birth date data
+2) write a program to accept loan start date and tenure of loan from user. assume date of installment is loan date display each every installment date upto end of tenure. also display reminder date before 5 days of installment date 
+
+OOP 
+--------------------
+1) Create class Animal which has below method 
+    hunt()
+    reproduce()
+
+Create class Bird which has below method  and it also extends Animal 
+    fly()
+    nest()
+    cheepering()
+
+
+2) Create class Foot which has constructor to initialize inches 
+    and it getFoot() method which return foot 
+
+Create class meter which extends Foot class 
+    and it getMeter() method which return meter 
+
+
+3) Create class Foot which has constructor to initialize inches 
+    and it getFoot() method which return foot 
+
+Create class meter which extends Foot class 
+    and it getMeter() method which return meter 
+
+Create class KM which extends meter class 
+    and it getkm() method which return kilometer  
+
