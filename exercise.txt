@@ -41,6 +41,14 @@ Dictionary
     copy Dictionary into another Dictionary using shallow copy technique
     empty copied Dictionary 
     display empty Dictionary 
+
+Set 
+--------------------------------------------------------
+1) create two list fruits and vegis (both might have duplicate values) 
+convert both list into single set refrigerator 
+
+2) assume there are two list friends and families both have 10 mobile numbers. it is quite possible that both list have same numbers. you job is to create telephone_directory which must not contain any duplicate number using set 
+
     
 write a program to convert 3 digit amount into words
 input :123 output one two three
