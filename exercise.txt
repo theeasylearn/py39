@@ -54,20 +54,14 @@ write a program to convert 3 digit amount into words
 input :123 output one two three
 amount = 123
 
-
-write a program to convert 3 digit amount into words
-input :123 output one hundred twenty three
-
 write a program to convert 4 digit amount into words
 input :1234 output one two three four 
 
-#write a program to convert given minutes into hours and remaining minutes
-input : 150 minutes 
-output : 2 hours and 30 minutes 
-
-#write a program to convert given grams into kg and remaining grams
+#write a program to convert given grams into kg and remaining grams.
 input : 2500 grams
 output : 2 kg and 500 grams 
+
+
 
 #write a program to display dinomations of currency for given amount
 input : 387 Rupees 

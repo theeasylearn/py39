@@ -18,5 +18,4 @@ maths + english + science + \
 computer + physics + chemistry + \
 biology + history + geography + drawing
 
-
 print("total = ",total)
