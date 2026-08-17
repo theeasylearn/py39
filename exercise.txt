@@ -76,9 +76,8 @@ output :
 1 x 1 =   01
 
 decision making statement
----------------------
-1) write a program to findout whether given shape is landscape or portrait or square using decision making statement if 
-
+-------------------------
+1) write a program to findout whether given shape is landscape or portrait or square using decision making statement if. 
 
 2) write a program to accept length and width of two different farm from user. and findout & display which farm is bigger 
 
@@ -86,7 +85,7 @@ decision making statement
     input 1 : monday 
     input 2 : tuesday 
     input 7 : sunday 
-
+--------------------------------
 4) write a program to findout whether given year is millennium year or not. using if else decision making statements.
 
 5) write a program to findout elder brother from given two brother's age. 
