@@ -86,11 +86,13 @@ decision making statement
     input 2 : tuesday 
     input 7 : sunday 
 --------------------------------
+if else 
+--------------------------------
 4) write a program to findout whether given year is millennium year or not. using if else decision making statements.
 
 5) write a program to findout elder brother from given two brother's age. 
 
-6) write a program to findout which is cheaper approach to buy IPhone 17 pro max.  consider use is going usa should he buy iphone from usa or from india. 
+6) write a program to findout which is cheaper approach to buy IPhone 17 pro max.  consider user is going usa should he buy iphone from usa or from india. take required input from user and suggest from where he should buy i-phone (india or USA) 
 
 7) write a program to decide which is cheaper approach to go from ahmedabad to delhi. by car or by train. consider person has his own petrol car  and he prefer to travel by 1st class train 
 
