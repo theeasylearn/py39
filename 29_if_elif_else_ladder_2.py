@@ -19,3 +19,28 @@ obesity level
     5   calculate BMI 
     5   calculate & display person obesity level
 '''
+weight = float(input("Enter your weight in KG."))
+print("Enter your height in foot & remaining inches")
+foot = int(input("Enter only foot"))
+inches = int(input("Enter remaining inches"))
+
+total_inches = (foot * 12) + inches 
+meter = total_inches / 39.37
+bmi = round(weight / (meter * meter),2)
+print(bmi)
+
+if bmi>=25 and bmi<=29.99:
+    print("you are Overweight")
+elif bmi>=18.5 and bmi<=24.99:
+    print("you are normal")
+elif bmi>=30 and bmi<=34.99:
+    print("you are Obese")
+elif bmi>=35:
+    print("you are extremely Obese")
+else:
+    print("you are underweight")
+
+print("Good bye.")
+
+
+
