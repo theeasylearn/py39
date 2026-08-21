@@ -142,6 +142,18 @@ https://miro.medium.com/v2/resize:fit:1100/format:webp/1*f58HMTVzfN2XvCPR23wXgA.
 6) write a program to calculate & display day of week (monday/tuesday) from given date. 
 refer https://www.wikihow.com/Calculate-the-Day-of-the-Week
 
+match case 
+--------------------
+1) write a program to accept month number from user and display name of month using match case 
+
+2) write a program to accept month number from user and display season in which month comes. month number must be valid 
+ 
+Numbers	    Months
+---------------------------------------------------
+1, 2	    January, February
+3, 4, 5	    March, April, May
+6, 7, 8, 9	June, July, August, September
+10, 11, 12	October, November, December
 
 loop 
 
