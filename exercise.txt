@@ -184,6 +184,15 @@ for loop
 5) write a program to count vowels, consonants, digits, words, and symbol in given string. 
 6) write a program to convert all negative values into positive values in the same list. 
 
+nested loop 
+-------------------------------------------
+write a programs to print following pattern 
+https://media.geeksforgeeks.org/wp-content/uploads/20230201105319/Pattern-Printing-in-Java.jpg
+
+write a programs to print following pattern 
+https://media.geeksforgeeks.org/wp-content/uploads/20260404181330407847/c_program_patterns.webp
+
+
 functions
 -----------------------------------
 create default argument function getBytes that returns total bytes of Gigabytes, megabytes and kilobytes and bytes where megabytes and kilobytes and bytes should be optional 
