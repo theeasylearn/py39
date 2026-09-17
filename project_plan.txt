@@ -1,0 +1,7 @@
+1) findout website that can provide ai news with heading and text 
+  https://www.therundown.ai/news
+2) extract all the news using requests and beautifulsoup4
+3) convert that news into hindi language 
+4) convert text into audio using text to speech tool 
+5) play audio 
+6) run this project every day at 7 pm 
