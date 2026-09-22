@@ -213,6 +213,13 @@ modify beautifulsoup\4_final_example.py make below changes
     3) play rashi bhavishya as per chandra rashi calculated in step 2 
     4) create system that will play music everyday once when user start computer 1st time  
 
+arbitrary argument function
+----------------------------------
+1) create user defined function that will return minimum numbers from all the numbers  received in arbitrary arguments 
+
+2) create user defined function that will return sum of all the values received in arbitrary arguments 
+
+3) create user defined function that will return country names that ends with 'land' from arbitrary argument for example : poland, england, newz-land, neitherland, india, USA, 
 recursion
 -----------------
 write a program to convert decimal number into octal number system 
