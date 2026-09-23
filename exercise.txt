@@ -228,6 +228,7 @@ write a program to convert amount into words (upto 10 digits)
 input: 10265 output: ten thousand two hundred sixty five  
 
 lambda function 
+--------------------------------------------------------------------
 write a program to calculate compound interest using lambda function 
 write a program to calculate fahrenheit of given celsius using lambda function 
 write a program to convert list that has mixed case countries names into lowercase countries name using lambda
