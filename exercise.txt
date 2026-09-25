@@ -238,6 +238,12 @@ write a program to filter word list that ends with asia using filter function
 write a program to filter word list that ends with tan using filter function 
 write a program to filter largest number among each value in 2n list using filter function 
 
+recursion
+-----------------
+write a program to convert decimal number into octal number 
+
+write a program to convert decimal number into hexadecimal number 
+
 
 modules
 -----------------------------

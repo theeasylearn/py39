@@ -1,8 +1,11 @@
-def printNumber(number): #10
-    if number<100:
-        print(number) # 10
-        number = number + 1 # 11
-        printNumber(number) #call printNumber function from printNumber function
-    print("last line of function",number)
-number = 10 
-printNumber(number)
+# write a program to print following series 
+# 2 4 6 8 10 12 ..... 100
+#define function 
+def printSeries(num):
+    if num<=100:
+        print(num,end=' ')
+        num = num + 2 #4
+        printSeries(num)
+num = 2
+printSeries(num)
+
