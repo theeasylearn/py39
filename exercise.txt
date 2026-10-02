@@ -256,6 +256,26 @@ create module communicator which has below methods
     sendEmail which has email message as argument
        Just print message email message send
 
+package
+------------------------------------------------
+Create Package School. it should have 3 package
+        Nursery
+            teachers.py 
+                return all the teachers working in Nursery department(10 teacher)
+            subject.py 
+                return all the subject taught in Nursery department(6 subjects)
+        Primary
+            teachers.py 
+                return all the teachers working in Nursery department(10 teacher)
+            subject.py 
+                return all the subject taught in Nursery department(6 subjects)
+        Secondary
+            teachers.py 
+                return all the teachers working in Nursery department(10 teacher)
+            subject.py 
+                return all the subject taught in Nursery department(6 subjects)
+use package into another files, we need to call methods of all above modules 
+
 
 Exception handling 
 ------------------------------------------------
