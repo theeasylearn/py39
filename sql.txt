@@ -115,3 +115,4 @@ VALUES
 ('Rajesh Mehta','rajesh@gmail.com','M','2004-03-12',6.0,'BCA from Gujarat University'),
 ('Mrunal Shah','mrunal@gmail.com','F','2005-11-27',5.5,'BSc IT from Bhavnagar University'),
 ('Om Patel','om@gmail.com','M','2006-08-04',5.7,'BTech from Nirma University');
+
