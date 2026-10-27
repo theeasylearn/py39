@@ -116,3 +116,25 @@ VALUES
 ('Mrunal Shah','mrunal@gmail.com','F','2005-11-27',5.5,'BSc IT from Bhavnagar University'),
 ('Om Patel','om@gmail.com','M','2006-08-04',5.7,'BTech from Nirma University');
 
+How to delete rows from table 
+Delete rows from table without condition (all rows delete)
+syntax 
+delete from tablename
+example 
+delete from users 
+
+Delete rows from table with condition (selected rows delete)
+
+syntax 
+delete from tablename where relational_expression 
+
+example 
+1) delete user whose id is 109.
+SQL
+
+delete from users where id = 109
+2) delete users whose height is equal to or below 5.20
+delete from users where height<=5.20
+
+delete row from  users table whose name is Alok Desai
+delete from users where name = "Alok Desai"
