@@ -138,3 +138,64 @@ delete from users where height<=5.20
 
 delete row from  users table whose name is Alok Desai
 delete from users where name = "Alok Desai"
+
+How to empty table & reset primary key 
+syntax 
+truncate table <tablename>
+example 
+truncate table users 
+
+
+how to remove table and all data it has 
+---------------------------------------
+syntax 
+drop table <tablename>
+
+example 
+drop table products 
+
+how to update rows in tables 
+-------------------------------------------------
+syntax 
+update <tablename> set field_1=value [,field_2=value] [,field_n=value] [where <condition>]
+
+exmaple 
+update users set fullname to 'Divya Patel' email to divya.patel@gmail.com and gender to female of user whose id is 1 
+
+SQL 
+update users set fullname = 'Divya Patel', email = 'divya.patel@gmail.com', gender='F' WHERE id=1
+
+update user increase salary of all users by 5000 rupees 
+update users set salary = salary + 5000
+
+update users decrease salary by 2 percentage 
+update users set salary = salary * 0.98
+
+How to rename table ? change table name 
+rename table <oldtablename> to <newtablename>
+
+
+example 
+rename table users to persons
+rename table persons to users
+
+how to change table structure ?
+add new column into table 
+ALTER TABLE table_name
+ADD column_name datatype(size);
+
+
+change column name/column's datatype/size of column 
+----------------------------------------------------
+ALTER TABLE table_name
+RENAME COLUMN old_column_name TO new_column_name;
+
+ALTER TABLE table_name
+MODIFY COLUMN column_name new_datatype(size);
+
+ALTER TABLE table_name
+CHANGE COLUMN old_column_name new_column_name new_datatype(size);
+
+drop existing column 
+ALTER TABLE table_name
+DROP COLUMN column_name;
