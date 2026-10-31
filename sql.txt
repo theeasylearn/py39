@@ -154,12 +154,15 @@ drop table <tablename>
 example 
 drop table products 
 
-how to update rows in tables 
+
+how to update rows in tables?
 -------------------------------------------------
 syntax 
+
 update <tablename> set field_1=value [,field_2=value] [,field_n=value] [where <condition>]
 
-exmaple 
+example
+------------- 
 update users set fullname to 'Divya Patel' email to divya.patel@gmail.com and gender to female of user whose id is 1 
 
 SQL 
@@ -184,34 +187,43 @@ add new column into table
 ALTER TABLE table_name ADD column_name datatype(size);
 alter table users add remarks char(255)
 
-change column name/column's datatype/size of column 
+change column name/column's datatype/size of column in table?
 ----------------------------------------------------
+to change column name 
 ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
-alter table users rename column remarks to description
+alter table users rename column detail to remarks
+
+to change datatype of existing column 
 
 ALTER TABLE table_name MODIFY COLUMN column_name new_datatype(size);
-alter table users modify column description varchar(512)
+alter table users modify column remarks varchar(512)
 
-drop existing column 
+to add column into table 
+alter table table_name add column column_name datatype(size)
+alter table users add column notes char(255)
+
+to drop existing column 
 ALTER TABLE table_name DROP COLUMN column_name;
-alter table users drop column description
+alter table users drop column notes 
 
 -------------------------------------------------
-
+ 
 how to fetch data from table?
 to fetch data from table, we use select statement
+
 syntax 
 select * | <column-list> from tablename [where condition] [group by fieldname] [having condition] [order by fieldname] [limit start,offset]
 
 examples 
 1) fetch all rows and all column from users table 
+
 select * from users 
 
 2) fetch selected fields 
 fetch all users' id,fullname,email,date of birth, gender 
 
 select id,fullname,email,dob,gender from users 
-select id,fullname,email,date_format(dob,'%d-%m-%Y') as birth_date,gender from users;
+select id,fullname,email,date_format(dob,'%d-%m-%Y') as birth_date,gender from users
 
 how to filter records/row 
 
@@ -221,4 +233,40 @@ select * from users where gender = 'm'
 fetch user's name and salary of those users whose salary is below 20000
 select fullname,salary from users where salary<20000
 
+Company
+-----------------------------------------------------------------------------
+fetch customerNumber, customername, creditlimit of those customers whoese credit limit is between 100000 to 500000
 
+select customerNumber,customername,creditlimit from customers where creditlimit>=100000 and creditlimit<=500000
+or
+select customerNumber,customername,creditlimit from customers where creditlimit between 100000 and 500000
+
+
+fetch customerNumber, customername, country of those customers who are from usa or france or germany or spain 
+
+select customerNumber, customername, country from customers where country='usa' or country='france' or country='germany' or country='spain'
+
+OR 
+
+select customerNumber, customername, country from customers where country in ('usa','france','germany','spain')
+
+fetch customerNumber, customername, country of those customers who are not from usa or france or germany or spain
+
+select customerNumber, customername, country from customers where country !='usa' and country!='france' and country!='spain' and country!='germany'
+
+OR 
+
+select customerNumber, customername, country from customers where country not in ('usa','france','germany','spain')
+
+fetch customername of those customers whose name has wheels 
+select customername from customers where customername like '%wheels%'
+
+fetch customername of those customers whose name end with wheels 
+select customername from customers where customername like '%wheels'
+
+fetch customername of those customers whose name start with wheels 
+select customername from customers where customername like 'wheels%'
+
+fetch payment details of those payments which are received on 17-dec-2004
+
+select * from payments where paymentDate='2004-12-17'
