@@ -268,5 +268,80 @@ fetch customername of those customers whose name start with wheels
 select customername from customers where customername like 'wheels%'
 
 fetch payment details of those payments which are received on 17-dec-2004
-
 select * from payments where paymentDate='2004-12-17'
+
+fetch payment details of those payments which are received on in calendar year 2004
+select * from payments where paymentDate>='2004-01-01' and paymentDate<='2004-12-31'
+
+fetch payment details of those payments which are received on in finincial year 2005/06
+select * from payments where paymentDate>='2005-04-01' and paymentDate<='2006-03-31'
+
+Aggregrate functions
+---------------------------------------------------------------------------------------
+function that work upon numeric field of table and always return single value is called aggrigate function
+
+sum()
+it always return sum of numeric fields value 
+example
+findout total payment company has received so far 
+select sum(amount) from payments 
+
+
+avg()
+it always return average of numeric fields value 
+example
+findout average payment amount company has received 
+select avg(amount) from payments 
+select round(avg(amount),2) as average_payment_amount from payments; 
+
+min()
+it always return minimum of numeric fields value 
+example
+findout least payment amount 
+select min(amount) as minimum_amount from payments 
+
+max()
+it always return maximum of numeric fields value 
+example
+findout maximum payment amount 
+select max(amount) as maximum_amount from payments 
+
+
+count()
+it count no of values in table 
+example 
+findout no of payments company received
+select count(*) from payments 
+
+findout how many customer company has 
+select count(*) as total_customers from customers;
+
+findout total no of orders company received
+select count(*) as total_orders from orders
+
+Caution
+---------------------------------
+never use normal field along with aggrigate function. otherwise there will misleading output.
+example 
+findout customerNumber who has made minimum payment 
+select customerNumber,min(amount) as minimum_payment from payments 
+
+
+we can use where clause to filter rows and then we can apply  aggrigate function on filtered rows. 
+
+fetch total payments, no of payments received by customerNumber 114
+select sum(amount) as total_payment, count(*) as no_of_payments from payments where customerNumber=114;
+
+fetch how many customers are from usa country. 
+select count(*) as 'usa_customers_count' from customers where country='usa'
+
+
+fetch total order amount of product whose code is S18_1749
+select sum(quantityOrdered * priceEach) from orderdetails where productCode = 'S18_1749'
+
+findout total payment, no of payment received in 2005
+select count(*) as no_of_payments, sum(amount) as total_payments from payments where paymentDate>='2005-01-01' and paymentDate<='2005-12-31'
+ 
+
+
+
