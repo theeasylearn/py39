@@ -378,4 +378,37 @@ select customerNumber,sum(amount) as total_payment from payments group by custom
 fetch country name and no of customers from country of only those country which has more then 5 customers
 select country,count(*) as no_of_customers from customers group by country having count(*) > 5
 
+order by 
+-------------------------------------------------------------------------
+order by clause is used to display row in specific sequence 
+we can either display rows in asecnding order (A TO Z) or descencing order (Z TO A)
+
+example 
+fetch customerNumber,customername,city,state and country in name wise asecnding order 
+select customerNumber,customername,city,state,country from customers order by customername
+
+fetch customerNumber,paymentDate, amount of all payments and display them amount wise descencing order 
+select customerNumber,paymentDate, amount from payments order by amount desc 
+
+fetch customerNumber,paymentDate, amount of all payments and display them paymentDate wise in asecnding order 
+select customerNumber,paymentDate, amount from payments order by paymentDate
+
+select customerNumber,date_format(paymentDate,'%d-%m-%Y') as paymentDate, amount from payments order by paymentDate;
+
+fetch customerNumber,customername,city,state and country in country wise, then state wise, and then city wise  
+select customerNumber,customername,city,state,country from customers order by country, state, city 
+
+limit clause 
+------------------------
+we must control no of rows fetched in any sql statement otherwise system would be crashed if tables has thousands of records. to do so we use limit clause 
+
+fetch 50 customers detail name wise asecnding order 
+select * from customers order by customername limit 0,50
+
+fetch next 25 customers detail name wise asecnding order 
+select * from customers order by customername limit 51,25
+
+fetch top 10 payments received in year 2004
+select customerNumber,amount from payments where year(paymentDate) = 2004 order by amount desc limit 0,10
+
 
