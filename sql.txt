@@ -411,4 +411,136 @@ select * from customers order by customername limit 51,25
 fetch top 10 payments received in year 2004
 select customerNumber,amount from payments where year(paymentDate) = 2004 order by amount desc limit 0,10
 
+Joins
+-------------------------------------------------------------------------------------------
+Join operation basically  makes join between multiple tables and display data as single virtual table.
+to join multiple tables, there must be one common field between tables to be used in join.
 
+what is common field?
+common field is field in two table which has same data type and same set of values (domain values) and possibely names are also same.
+
+types of JOIN 
+------------------------------
+Ram 
+    A, B, C, D, E, 
+
+Shyam 
+    C, D, E, F, G 
+
+Common value (inner join)
+C, D, E
+
+Left join 
+------------------------------
+Ram 
+     A, B, C, D, E,
+Shyam 
+           C, D, E,
+
+Right join 
+------------------------------
+Ram 
+    C, D, E,
+Shyam 
+    C, D, E, F, G 
+
+INNER JOIN / Equi join
+
+Inner join fetches only matching rows from all the tables used in join. here  matching rows means common field in both table has same value in both table.
+
+LEFT JOIN
+Left join fetches all rows from left side table but only matching rows from right side table.  here  matching rows means common field in both table has same value in both table
+
+RIGHT JOIN
+right join fetches all rows from right side table but only matching rows from left side table.  here  matching rows means common field in both table has same value in both table
+
+CROSS JOIN
+FETCH DATA FROM BOTH TABLE WITHOUT ANY CONDITION
+
+SELF JOIN
+when table make join operation with it self, it is called self join 
+
+
+Equi join 
+--------------------------------------------------------------------------------------
+1) Fetch customerNumber, customerName, city, state, country his/her orderNumber, orderDate, status of order, display it customerNumber wise ascending order.
+
+  select customerNumber, customerName, city, state, country from customers 
+  select orderNumber,orderDate, status from orders 
+ 
+   let us join them 
+   ---------------------
+  select c.customerNumber, customerName, city, state, country, orderNumber,orderDate, status from customers c, orders o where c.customerNumber = o.customerNumber order by c.customerNumber
+
+2 Fetch customerNumber, customerName, city, state, country and paymentDate, amount of each and every customer and display them payment date wise (old date come first and new date come last)
+ 
+    select customerNumber, customerName, city, state, country from customers
+    select paymentDate,amount from payments 
+
+
+
+    let us join them 
+    ------------------------
+    select c.customerNumber, customerName, city, state, country,paymentDate,amount  from customers c, payments p where c.customerNumber = p.customerNumber order by paymentDate
+
+
+37 Fetch productCode, productName, quantityOrdered, priceEach, orderNumber, orderDate, status of each and every order
+    
+ 
+    let us join them 
+    ------------------------------------------------------------------
+ 
+38) fetch each order's orderNumber,customerNumber,customerName and total order value
+SQL
+ 
+    let js join them 
+    -----------------------------
+ 
+    
+
+LEFT JOIN
+-------------
+Left join fetches all rows from left side table but only matching rows from right side table.  here  matching rows means common field in both table has same value in both table
+
+39) fetch customerNumber,customerName who have never given any order
+
+ 
+let us join them 
+-------------------------------------------------------------
+
+40) Fetch those productCode and ProductName of those product which is never ordered
+-----------------------------------------------------------------------------------
+select productCode, productName from products p
+select orderNumber from orderdetails od 
+
+let us join them 
+-------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------
+RIGHT JOIN
+
+
+41) fetch those customerNumber and customerName who have never given any payments
+
+
+42) fetch those office Detail from office table in which no employees are working
+
+ 
+
+CROSS JOIN
+
+fetch possibilities for working in  each and every office for all employees
+----------------------------------------------------------------------------
+
+some advance examples
+-----------------------------------------------------
+43) findout actual customer's number and name  who have not given payments
+
+SQL
+    1st fetch those customerNumber who has given order 
+
+    2nd fetch those customerNumber who has given payment 
+
+    let us join them 
+    ---------------------------------------------------------------------------------------------------------
