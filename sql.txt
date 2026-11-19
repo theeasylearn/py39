@@ -484,18 +484,29 @@ Equi join
     select c.customerNumber, customerName, city, state, country,paymentDate,amount  from customers c, payments p where c.customerNumber = p.customerNumber order by paymentDate
 
 
-37 Fetch productCode, productName, quantityOrdered, priceEach, orderNumber, orderDate, status of each and every order
+3 Fetch productCode, productName, quantityOrdered, priceEach, orderNumber, orderDate, status of each and every order
     
+    select productCode,productName from products
+    select orderNumber, orderdate, status from orders 
+    select quantityOrdered,priceEach from orderdetails 
+
  
     let us join them 
     ------------------------------------------------------------------
- 
-38) fetch each order's orderNumber,customerNumber,customerName and total order value
+     select p.productCode,productName,o.orderNumber,status, orderdate, quantityOrdered,priceEach from products p, orders o, orderdetails od where p.productCode = od.productCode and o.orderNumber = od.orderNumber
+
+4) fetch each order's orderNumber,customerNumber,customerName and total order value
 SQL
- 
+
+    select orderNumber from orders 
+    select customerNumber,customerName from customers 
+    select orderNumber, sum(quantityOrdered * priceEach) as order_value from orderdetails group by orderNumber
+
+
     let js join them 
     -----------------------------
- 
+    select c.customerNumber,customerName,o.orderNumber,sum(quantityOrdered * priceEach) as order_value from orders o, customers c, orderdetails od where od.orderNumber = o.orderNumber and o.customerNumber = c.customerNumber group by od.orderNumber
+
     
 
 LEFT JOIN
