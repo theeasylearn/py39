@@ -511,32 +511,44 @@ SQL
 
 LEFT JOIN
 -------------
-Left join fetches all rows from left side table but only matching rows from right side table.  here  matching rows means common field in both table has same value in both table
+Left join fetches all rows from left side table but only matching rows from right side table.  here  matching rows means common field in both table which has same value in both table
 
-39) fetch customerNumber,customerName who have never given any order
+1) fetch customerNumber,customerName who have never given any order
+    select customerNumber,customerName from customers
+    select orderNumber from orders     
 
- 
+    let us join 
+    select c.customerNumber,customerName,orderNumber from customers c left join orders o on c.customerNumber = o.customerNumber where orderNumber is null 
+
 let us join them 
 -------------------------------------------------------------
 
-40) Fetch those productCode and ProductName of those product which is never ordered
+Fetch those productCode and ProductName of those product which is never ordered
 -----------------------------------------------------------------------------------
-select productCode, productName from products p
-select orderNumber from orderdetails od 
+    select productCode,productName from products 
+    select orderNumber from orderdetails od 
 
 let us join them 
 -------------------------------------------------------------
-
+    select p.productCode,productName,orderNumber from products p left join orderdetails od on p.productCode = od.productCode where orderNumber is null 
 
 ----------------------------------------------------------------------------------------------------------------
 RIGHT JOIN
+right join fetches all rows from right side table but only matching rows from left side table.  here  matching rows means common field in both table which has same value in both table
 
+1) fetch those customerNumber and customerName who have never given any payments
 
-41) fetch those customerNumber and customerName who have never given any payments
+    select customerNumber, customerName from customers 
+    select checkNumber from payments 
 
+    select c.customerNumber, customerName, checkNumber from payments p right join customers c on c.customerNumber = p.customerNumber where checkNumber is null 
 
-42) fetch those office Detail from office table in which no employees are working
+2) fetch those office Detail from office table in which no employees are working
 
+    select * from offices 
+    select employeeNumber from employees 
+
+    select employeeNumber,o.* from employees e right join offices o on e.officecode = o.officecode where employeeNumber is null  
  
 
 CROSS JOIN
