@@ -555,6 +555,7 @@ CROSS JOIN
 
 fetch possibilities for working in  each and every office for all employees
 ----------------------------------------------------------------------------
+select o.*,e.* from offices o, employees e
 
 some advance examples
 -----------------------------------------------------
@@ -562,8 +563,19 @@ some advance examples
 
 SQL
     1st fetch those customerNumber who has given order 
+    select distinct customerNumber from orders o 
 
     2nd fetch those customerNumber who has given payment 
+    select distinct customerNumber from payments p 
 
+    select customerNumber,customername from customers c
     let us join them 
-    ---------------------------------------------------------------------------------------------------------
+    ----------------------------------------------------------------------------------------
+    first fetch customerNumber and name of those customer who have given order 
+    select c.customerNumber,customername from customers c, order o where c.customerNumber = o.customerNumber 
+
+   select DISTINCT c.customerNumber,customername from customers c, orders o where c.customerNumber = o.customerNumber and o.customerNumber not in ( select distinct customerNumber from payments p)
+
+   
+
+
